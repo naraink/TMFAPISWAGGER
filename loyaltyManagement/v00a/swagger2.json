@@ -265,7 +265,7 @@
       }
     },
     "LoyaltyAction": {
-      "description": "A LoyaltyAction is an action that needs to be performed if the loyalty rule‚Äôs condition clause evaluates to TRUE. A LoyaltyAction may correspond either to a CustomerOrder (for example 100 SMS free), or to a BusinessInteraction (for example an SMS notifying the 100 SMS free) or to a LoyaltyEarn (for example 100 points on the LoyaltyAccount). A LoyaltyAction describes a LoyaltyExecutionPoint. A LoyaltyExecutionPoint is a type of PolicyExecutionPoint. A LoyaltyExecutionPoint tracks the application of a LoyaltyAction and may trigger BusinessInteraction, CustomerOrder or LoyaltyEarn, depending on the type of the LoyaltyAction it belongs to.",
+      "description": "A LoyaltyAction is an action that needs to be performed if the loyalty ruleís condition clause evaluates to TRUE. A LoyaltyAction may correspond either to a CustomerOrder (for example 100 SMS free), or to a BusinessInteraction (for example an SMS notifying the 100 SMS free) or to a LoyaltyEarn (for example 100 points on the LoyaltyAccount). A LoyaltyAction describes a LoyaltyExecutionPoint. A LoyaltyExecutionPoint is a type of PolicyExecutionPoint. A LoyaltyExecutionPoint tracks the application of a LoyaltyAction and may trigger BusinessInteraction, CustomerOrder or LoyaltyEarn, depending on the type of the LoyaltyAction it belongs to.",
       "type": "object",
       "properties": {
         "id": {
@@ -282,7 +282,7 @@
           ]
         },
         "actionAttributes": {
-          "description": "Additional attributes required to perform the action. These attributes will depend on the type of the loyalty action. For example, if it is a LoyaltyEarn action, there will be a ‚Äúquantity‚Äù attribute value pair indicating how many points should be earned.",
+          "description": "Additional attributes required to perform the action. These attributes will depend on the type of the loyalty action. For example, if it is a LoyaltyEarn action, there will be a ìquantityî attribute value pair indicating how many points should be earned.",
           "type": "object",
           "additionalProperties": {
             "type": "string"
@@ -391,11 +391,11 @@
           "type": "string"
         },
         "name": {
-          "description": "The loyalty member‚Äôs name.",
+          "description": "The loyalty memberís name.",
           "type": "string"
         },
         "status": {
-          "description": "A free-form field in which the member‚Äôs status may be captured, e.g. ‚Äúactive‚Äù, ‚Äúsuspended‚Äù, .etc.",
+          "description": "A free-form field in which the memberís status may be captured, e.g. ìactiveî, ìsuspendedî, .etc.",
           "type": "string"
         },
         "validFor": {
@@ -425,7 +425,7 @@
           "$ref": "#/definitions/LoyaltyProgramProduct"
         },
         "href": {
-          "description": "A reference to the loyalty member‚Äôs loyalty account.",
+          "description": "A reference to the loyalty memberís loyalty account.",
           "type": "string"
         }
       }
@@ -450,7 +450,7 @@
           "$ref": "#/definitions/ValidFor"
         },
         "href": {
-          "description": "A reference to the loyalty member‚Äôs loyalty balance.",
+          "description": "A reference to the loyalty memberís loyalty balance.",
           "type": "string"
         },
         "loyaltyEarn": {
